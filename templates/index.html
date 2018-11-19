@@ -1,0 +1,24 @@
+{% extends "layout.html" %}
+
+{% block content %}
+  <main class="hero-section">
+    <div class="container">
+      
+      <div class="section-content">
+        <h2>Squaring Image</h2>
+        <a href="{{ url_for('signup') }}" class="btn-primary" title="If you do not have an account, please start here.">Sign up</a>
+        <a href="{{ url_for('login') }}" class="btn-primary" title="If you already have an account, please click login.">Log in</a>
+        <hr/>
+        <a href="{{ url_for('about') }}" class="btn-secondary" title="About our web app">Learn more</a> 
+      </div>
+
+      </div>
+      <div class="section-device">
+        <img src="static/img/msquare1.png">
+      </div>
+      
+      <div class="clearfix"></div>
+
+    </div>
+  </main>
+{% endblock %}

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <body>
+    <div class="container">
+      <div class="header">
+        <p align="center"><img src="static/img/bksquare.gif" width="100" height="100"/></p>
+        <h3 class="text-muted" align="center">Squaring Image</h3>
+      </div>
+      <hr size=5 noshade="noshade" color="black"/>
+      <div align="center">
+    <!--<a href="{{ url_for('download', filename=filename) }}">Download</a>-->
+    <p>Original File Size: {{filesize_original}} KB</p>
+    <p>Resized File Size: {{filesize_resized}} KB</p>
+      <form action="download" method="GET" enctype="multipart/form-data"> <!--"upload" is the directory where the action takes place-->
+      <input type="submit" value="Download">
+      </form>
+      <form method="get" action="http://127.0.0.1:5000/">
+      <button type="submit">Logout</button>
+      </form>    
+
+      
+      </div>
+    </div>
+  </body>
+</html>
