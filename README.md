@@ -1,4 +1,4 @@
-This is the README file for yl4785's Assigment Three for Application Security. 
+This is the README file for this application. 
 
 The following instruction is for MAC users:
 
